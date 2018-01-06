@@ -24,3 +24,7 @@
 
 # Ignore Spring files.
 /spring/*.pid
+
+# Ignore Visual Studio Code generated files.
+.vscode/
+
