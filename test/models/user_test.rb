@@ -64,4 +64,16 @@ class UserTest < ActiveSupport::TestCase
   test "authenticated? should return false for a user with nil digest" do
     assert_not @user.authenticated?(:remember, '')
   end
+
+  test "should follow and unfollow a user" do
+    satoshi = users(:satoshi)
+    archer = users(:archer)
+    assert_not satoshi.following?(archer)
+    satoshi.follow(archer)
+    assert satoshi.following?(archer)
+    assert archer.followers.include?(satoshi)
+    satoshi.unfollow(archer)
+    assert_not satoshi.following?(archer)
+  end
+  
 end
