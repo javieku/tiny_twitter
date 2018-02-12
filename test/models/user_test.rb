@@ -76,4 +76,22 @@ class UserTest < ActiveSupport::TestCase
     assert_not satoshi.following?(archer)
   end
   
+  test "feed should have the right posts" do
+    satoshi = users(:satoshi)
+    archer  = users(:archer)
+    lana    = users(:lana)
+    # Posts from followed user
+    lana.microposts.each do |post_following|
+      assert satoshi.feed.include?(post_following)
+    end
+    # Posts from self
+    satoshi.microposts.each do |post_self|
+      assert satoshi.feed.include?(post_self)
+    end
+    # Posts from unfollowed user
+    archer.microposts.each do |post_unfollowed|
+      assert_not satoshi.feed.include?(post_unfollowed)
+    end
+  end
+  
 end
