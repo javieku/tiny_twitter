@@ -1,4 +1,4 @@
-# Ruby on Rail ssample application
+# Ruby on Rails Tiny Twitter
 
 ## License
 
