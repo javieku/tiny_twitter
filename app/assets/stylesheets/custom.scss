@@ -21,6 +21,12 @@ $gray-medium-light: #eaeaea;
   box-sizing:         border-box;
 }
 
+/* universal */
+
+textarea {
+  color: #000;
+}
+
 /* miscellaneous 
 
 .debug_dump {
@@ -168,7 +174,7 @@ aside {
     float: left;
     padding: 0 10px;
     border-left: 1px solid $gray-lighter;
-    color: gray;
+    color: white;
     &:first-child {
       padding-left: 0;
       border: 0;
@@ -298,3 +304,5 @@ span.picture {
     border: 0;
   }
 }
+
+.navbar-nav > li > .dropdown-menu { background-color: #333333; }
