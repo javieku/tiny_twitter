@@ -1,15 +1,5 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "../scss/agency.scss";
-@import "../css/agency.css";
-
-html { 
-	background-color: #0084b4;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-  }
 
 /* mixins, variables, etc. */
 
@@ -21,7 +11,7 @@ $gray-medium-light: #eaeaea;
   box-sizing:         border-box;
 }
 
-/* miscellaneous 
+/* miscellaneous */
 
 .debug_dump {
   clear: both;
@@ -31,7 +21,7 @@ $gray-medium-light: #eaeaea;
   @include box_sizing;
 }
 
-/* universal 
+/* universal */
 
 body {
   padding-top: 60px;
@@ -52,7 +42,7 @@ textarea {
   }
 }
 
-/* typography 
+/* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -80,7 +70,7 @@ p {
 }
 
 
-/* header
+/* header */
 
 #logo {
   float: left;
@@ -97,7 +87,7 @@ p {
   }
 }
 
-/* footer 
+/* footer */
 
 footer {
   margin-top: 45px;
