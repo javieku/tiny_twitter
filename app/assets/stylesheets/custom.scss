@@ -42,6 +42,18 @@ textarea {
   }
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: #fed136;
+  border-color: #fed136;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #fec810 !important;
+  border-color: #fec810 !important;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -173,7 +185,6 @@ footer {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 }
-
 
 /* sidebar */
 
