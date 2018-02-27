@@ -87,6 +87,21 @@ p {
   }
 }
 
+.navbar-inverse
+{
+  .navbar-nav {
+    li {
+      a {
+        color: white;
+        &:hover {
+          color:  #fed136;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
 /* footer */
 
 footer {
