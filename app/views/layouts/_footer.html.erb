@@ -1,12 +1,16 @@
 <footer class="footer">
-  <small>
-   <a href="https://github.com/javieku/sample_app">Tiny Twitter</a>
-    by <a href="https://github.com/javieku">Javieku</a>
-  </small>
-  <nav>
-    <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-    </ul>
-  </nav>
+
+    <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Tiny Twitter 2018</span>
+        </div>
+
+        <div class="col-md-6">
+          <ul class="list-inline quicklinks">
+              <li><%= link_to "About",   about_path %></li>
+              <li><%= link_to "Contact", contact_path %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 </footer>

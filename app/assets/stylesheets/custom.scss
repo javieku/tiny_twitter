@@ -5,6 +5,8 @@
 
 $gray-medium-light: #eaeaea;
 
+$yellow: #fed136;
+
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
@@ -44,14 +46,14 @@ textarea {
 
 .btn-primary {
   color: #fff;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: $yellow;
+  border-color: $yellow;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: $yellow !important;
+  border-color: $yellow !important;
 }
 
 /* typography */
@@ -88,7 +90,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fed136;
+  color: $yellow;
   font-family: 'Kaushan Script';
   letter-spacing: 1px;
   padding-top: 9px;
@@ -106,7 +108,7 @@ p {
       a {
         color: white;
         &:hover {
-          color:  #fed136;
+          color:  $yellow;
           text-decoration: none;
         }
       }
@@ -117,15 +119,17 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
+  background: #222;
+  padding: 25px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
+  text-align: center;
   a {
-    color: $gray;
-    &:hover {
-      color: $gray-darker;
-    }
+    color: $yellow;
   }
   small {
     float: left;
@@ -138,6 +142,21 @@ footer {
       margin-left: 15px;
     }
   }
+}
+
+footer.copyright {
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+footer ul.quicklinks {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* home page styles */
