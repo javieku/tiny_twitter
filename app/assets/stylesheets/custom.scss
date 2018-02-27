@@ -4,7 +4,7 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
-
+$black-light: #333333;
 $yellow: #fed136;
 
 @mixin box_sizing {
@@ -84,10 +84,15 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
+
 a {
   color: $yellow
 }
 
+a:hover, a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
 
 /* header */
 
@@ -255,14 +260,13 @@ aside {
     float: left;
     padding: 0 10px;
     border-left: 1px solid $gray-lighter;
-    color: gray;
+    color: $black-light;
     &:first-child {
       padding-left: 0;
       border: 0;
     }
     &:hover {
       text-decoration: none;
-      color: blue;
     }
   }
   strong {
@@ -361,7 +365,7 @@ input {
     }
   }
   .timestamp {
-    color: $gray-light;
+    color: $black-light;
     display: block;
     margin-left: 60px;
   }
