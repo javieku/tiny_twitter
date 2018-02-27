@@ -27,6 +27,7 @@ $yellow: #fed136;
 
 body {
   padding-top: 60px;
+  color:white;
 }
 
 section {
@@ -45,13 +46,13 @@ textarea {
 }
 
 .btn-primary {
-  color: #fff;
+  color: white;
   background-color: $yellow;
   border-color: $yellow;
 }
 
 .btn-primary:hover {
-  color: #fff;
+  color: white;
   background-color: $yellow !important;
   border-color: $yellow !important;
 }
@@ -60,6 +61,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -81,6 +83,9 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+a {
+  color: $yellow
 }
 
 
