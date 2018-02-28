@@ -1,0 +1,14 @@
+<% provide(:title, "Contact") %>
+<div class="contact">
+    <h1>Contact me</h1>
+<%= form_for @message, class:'form-control', url: contact_path do |f| %>
+  <%= notice %>
+  <%= @message.errors.full_messages.join(', ') %>
+
+  <%= f.text_field :name, placeholder: 'name' , class: 'form-control' %>
+  <%= f.email_field :email, placeholder: 'email' , class: 'form-control' %>
+  <%= f.text_area :body, placeholder: 'body', class: 'form-control' %>
+  <%= f.submit 'Send', class: "btn btn-primary" %>
+<% end %>
+
+</div>
