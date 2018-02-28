@@ -72,12 +72,12 @@ h1 {
 }
 
 h2 {
+  color: #23527c;
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
 }
 
 p {
@@ -131,7 +131,7 @@ a:hover, a:focus {
 footer {
   background: #222;
   padding: 25px 0;
-  position: fixed;
+  position: static;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -388,4 +388,32 @@ span.picture {
   input {
     border: 0;
   }
+}
+
+/* about */
+
+.about img.spotlight{
+  position:relative;
+  margin-bottom:30px;
+  border:5px solid #fff;
+  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
+  -moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+  box-shadow:0 0 20px rgba(0,0,0,0.2);
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box
+}
+.about img.spotlight.bio{
+  margin-bottom:15px
+}
+.about #wanikani-team img{
+  z-index:1
+}
+.about #wanikani-team .row{
+  margin-top:-75px
+}
+
+.about .row
+{
+text-align:center;
 }
