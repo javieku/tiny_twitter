@@ -440,3 +440,10 @@ span.picture {
 {
 text-align:center;
 }
+
+/* pagination */
+
+.pagination > .active > a
+{
+  z-index: 0;
+}
