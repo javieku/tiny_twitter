@@ -3,6 +3,7 @@ class MessagesController < ApplicationController
     @message = Message.new message_params
 
     if @message.valid?
+      MessageMailer.contact_me(@message).deliver_now
       flash[:info] = "Message received, thanks!"
       redirect_to contact_path
     else

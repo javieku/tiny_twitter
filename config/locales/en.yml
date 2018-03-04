@@ -30,4 +30,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  message_mailer:
+    contact_me:
+      subject: "Message from www.tiny-twitter-co.herokuapp.com"

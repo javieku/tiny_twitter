@@ -15,8 +15,8 @@ class MessagesControllerTest < ActionDispatch::IntegrationTest
     end
   end
 
-
   test "POST create" do
+    assert_difference 'ActionMailer::Base.deliveries.size', 1 do
     post contact_path, params: {
       message: {
         name: 'cornholio',
