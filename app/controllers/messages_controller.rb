@@ -3,7 +3,8 @@ class MessagesController < ApplicationController
     @message = Message.new message_params
 
     if @message.valid?
-      redirect_to contact_path, notice: 'Message received, thanks!'
+      flash[:info] = "Message received, thanks!"
+      redirect_to contact_path
     else
       render :new
     end
