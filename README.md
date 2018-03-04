@@ -1,9 +1,7 @@
-# Ruby on Rails Tiny Twitter
+#  Tiny Twitter
 
-## License
-
-All source code in the is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+## About 
+Twitter like application with users, microposts, and a full login and authentication framework made with rails.
 
 ## Getting started
 
