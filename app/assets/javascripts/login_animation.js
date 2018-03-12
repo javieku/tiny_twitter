@@ -38,8 +38,8 @@ $(document).ready(function () {
         });
         div.style.position = 'absolute';
         document.body.appendChild(div);
-        div.textContent = email.value.substr(0, carPos);
-        span.textContent = email.value.substr(carPos) || '.';
+        div.textContent = email.value.substr(carPos);
+        span.textContent = email.value.substr(0, carPos) || '.';
         div.appendChild(span);
 
         emailCoords = getPosition(email);							console.log("emailCoords.x: " + emailCoords.x + ", emailCoords.y: " + emailCoords.y);
